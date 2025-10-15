@@ -4,102 +4,348 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multimediedesigner Sabine</title>
+    <title>Index</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=PT+Sans&display=swap"
+        rel="stylesheet">
+
     <style>
-       
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: white;
+            color: rgba(48, 48, 48, 1);
+        }
+
+        nav {
+            background-color: rgba(48, 48, 48, 1);
+            color: white;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+
+        header {
+            background-color: rgba(236, 235, 230, 1);
+            text-align: center;
+            padding-block: 20px;
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+
+        header h1 {
+            font-family: "JetBrains Mono", monospace;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 80px;
+            line-height: 70%;
+        }
+
+        header p {
+            font-size: 26px;
+        }
+
+        img.hero {
+            display: block;
+            margin: auto;
+            margin-bottom: 0px;
+            background-color: rgba(236, 235, 230, 1);
+        }
+
+        section.intro {
+            font-size: 18px;
+            font-style: italic;
+            font-weight: normal;
+            background-color: rgba(222, 222, 222, 1);
+            padding-bottom: 30px;
+            padding-top: 30px;
+            text-align: center;
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+
+        section.projects {
+            background-color: rgba(48, 48, 48, 1);
+            color: white;
+            text-align: center;
+            padding: 50px;
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px;
+            max-width: 1140px;
+            margin: 5px auto 0;
+        }
+
+        .project {
+            color: white;
+            border-radius: 6px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .project img {
+            width: 100%;
+            display: block;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .project h3 {
+            margin: 5px 3px;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 18px;
+        }
+
+        .project p {
+            font-size: 16px;
+            color: white;
+        }
+
+        section.skills {
+            background-color: rgba(236, 235, 230, 1);
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+
+        .skills-title {
+            text-align: center;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 24px;
+            margin-bottom: 60px;
+        }
+
+        .skills-subtitle {
+            text-align: center;
+            font-size: 16;
+            color: #444;
+            margin-bottom: 100px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            max-width: 1140px;
+            gap: 20px;
+        }
+
+        .skills-grid div {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .skills img {
+
+            width: 100%;
+            display: block;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        p a {
+            color: white;
+        }
+
+        section.about {
+            background-color: rgba(222, 222, 222, 1);
+
+        }
+
+        .about-p {
+            max-width: 1140px;
+            color: rgba(48, 48, 48, 1);
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin-left: 150px;
+            margin-right: 150px;
+
+        }
+
+
+
+        footer {
+            background-color: rgba(48, 48, 48, 1);
+
+        }
+
+        .footer-p {
+            max-width: 1140px;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            font-weight: normal;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-left: 150px;
+            margin-right: 150px;
+
+        }
+
+
+        section.blanc {
+            background-color: rgba(236, 235, 230, 1);
+            margin-left: 150px;
+            margin-right: 150px;
+        }
     </style>
+
 </head>
 
 <body>
-    <header>
-    
-        <section>
-            <h1>Sabine Boisen</h1>
-            <h3>Jeg forener teknik og æstetik i digitalt design.</h3>
-            <br>
-            <br>
-            <h5>"Som multimediedesign-studerende kombinerer jeg mit kunstneriske blik
-                med teknisk forståelse.
-                <br>Jeg ser det digitale som et nyt materiale
-                — et sted hvor form, funktion og oplevelse mødes."
-            </h5>
-            <br>
-            <br>
-        </section>
-    
-   
-    </header>
-    <br>
-    <br>
-    <main>
-        
-        <br>
-        <h2>Teknisk designer med baggrund i 3D, billedhugger/skulptør og
-            studerende i multimediedesign</h2>
-        <section>
-            <article>
-                Jeg er uddannet billedhugger fra Kunsthåndværkerskolen i Flensborg, hvor jeg arbejdede med form,
-                struktur og rumlig balance.
-                <br>Denne erfaring har givet mig en stærk forståelse for:
-                <ul>
-                    <li>komposition</li>
-                    <li>materialitet</li>
-                    <li>æstetik</li>
-                </ul>
-                - noget jeg i dag overfører til det digitale rum som multimediedesigner.
-                <br>
-                <br>Jeg tænker stadig som en håndværker, når jeg designer brugeroplevelser og digitale interfaces:
-                <br>det handler om balance, struktur og sanselighed.
-                <br>
-                <br>
-            </article>
-        </section>
-        <h2>Kompetencer</h2>
-        <SECTION>
-            <article>
-                <h4>Design & Visualisering</h4>
-                <br>Adobe Photoshop:
-                <br>billedredigering, grafisk komposition og farveforståelse
-                <br>UX/UI-principper (under uddannelse)
-                <br>Digital storytelling & visuel kommunikation
-            </article>
-            <article>
-                <h4>Teknisk Design</h4>
-                <br>Creo Parametric & SolidWorks: 3D-modellering og teknisk konstruktion
-                <br>GrabCAD: 3D-printforberedelse og additive manufacturing
-                <br>PDM Teamcenter & WindChill: produktdatahåndtering
-            </article>
-            <article>
-                <h4>Tværfaglig Erfaring</h4>
-                <br>Produktudvikling og konstruktion i industrivirksomheder
-                <br>Formgivning og skulpturel udvikling i kunstnerisk kontekst
-                <br>Projektkoordinering, teambaseret udvikling og innovation
-                <br>
-            </article>
-        </SECTION>
-        <br>
-
-    </main>
-    <footer>
-        <h2>Kreative projekter</h2>
+    <nav>
         <ul>
             <li>
-                <h4>Træskulpturer & formgivning</h4>
-                <br>Jeg arbejder fortsat med skulpturer i træ,
-                <br>hvor fokus er på materialets form og struktur.
-                <br>Denne praksis inspirerer mit digitale designarbejde
-                <br>– i både komposition, tekstur og lys.
+                <p><a href="#section1">Intro</a></p>
             </li>
-
             <li>
-                <br>
-                <br>
-                <h4>Digitale eksperimenter (under uddannelse)</h4>
-                <br>Grafisk identitet og layout
-                <br>Fotoredigering og billedkomposition
-                <br>Webdesign og brugergrænseflader
+                <p><a href="#section2">Projekter</a></p>
             </li>
-    </footer>
+            <li>
+                <p><a href="#section3">Kompetencer</a></p>
+            </li>
+            <li>
+                <p><a href="#section4">Om mig</a></p>
+            </li>
+            <li>
+                <p><a href="#section5">Kontakt</a></p>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <p>- Multimedie­designer -</p>
+        <h1>Portfolio</1>
+            <p>SABINE BOISEN</p>
+            <img src="Sabboi.png" alt="hero" class="hero" style="width:30%">
+    </header>
+    <section class="intro">
+        <br>“Som multimediedesign-studerende kombinerer jeg mit
+        <br>kunstneriske blik med teknisk forståelse.
+        <br>Jeg ser det digitale som et nyt materiale — et sted hvor
+        <br>form, funktion og oplevelse mødes."
+        <br>
+        <br>
+    </section>
+    <section class="projects">
+        <h2>Projekter</h2>
+        <div class="project-grid">
+            <a href="Sønderborg Food festival - Sabine.html" class="project">
+                <img src="P1.jpg" alt="Projekt 1">
+                <h3>Projekt 1</h3>
+                <p>1. Semester<br>Case: Sønderborg International Street Food Festival</p>
+            </a>
+            <a href="#" class="project">
+                <img src="P2.jpg" alt="Projekt 2">
+                <h3>Projekt 2</h3>
+                <p>1. Semester<br>Visualisering</p>
+            </a>
+            <a href="#" class="project">
+                <img src="P3.jpg" alt="Projekt 3">
+                <h3>Projekt 3</h3>
+                <p>1. Semester<br>Designproces</p>
+            </a>
+            <a href="#" class="project">
+                <img src="P4.jpg" alt="Projekt 4">
+                <h3>Projekt 4</h3>
+                <p>1. Semester<br>Digital præsentation</p>
+            </a>
+        </div>
+    </section>
+    <section class="skills">
+        <section class="skills">
+            <h2 class="skills-title">Kompetencer</h2>
+            <p class="skills-subtitle">Teknisk designer med baggrund i 3D, billedhugger/skulptør og studerende i
+                multimediedesign</p>
+
+            <div class="skills-grid">
+                <div>
+                    <h3>Design & Visualisering (under uddannelse)</h3>
+                    <ul>
+                        <li>Digital konceptudvikling & visuel kommunikation</li>
+                        <li>Erfaring med programmering i HTML og CSS</li>
+                        <li>Færdigheder i Figma</li>
+                        <li>Illustration og digital grafik</li>
+                    </ul>
+                    <img src="C1.jpg" alt="imgage 1">
+                </div>
+                <div>
+                    <h3>Teknisk Design</h3>
+                    <ul>
+                        <li>Erfaring i 3D-modellering og teknisk konstruktion</li>
+                        <li>Produktudvikling og visualisering</li>
+                        <li>Prototyper & mockups</li>
+                    </ul>
+                    <br>
+                    <br>
+                    <img src="C2.jpg" alt="imgage 2">
+                </div>
+                <div>
+                    <h3>Tværfaglig Erfaring</h3>
+                    <ul>
+                        <li>Produktudvikling og kreativ innovation</li>
+                        <li>Formgivning & skulpturel kommunikation</li>
+                        <li>Projekthåndtering og teamwork</li>
+                    </ul>
+                    <br>
+                    <br>
+                    <img src="C3.png" alt="imgage 3">
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <p class="about-p">Jeg er uddannet billedhugger fra Kunsthåndværkerskolen i Flensborg, hvor jeg arbejdede
+                med form, struktur
+                og rumlig balance.
+                <br>
+                <br>Denne erfaring har givet mig en stærk forståelse for komposition, materialitet og æstetik – noget
+                jeg i
+                dag overfører til det digitale rum som multimediedesigner.
+                <br>
+                <br>
+                Jeg tænker stadig som en håndværker, når jeg designer brugeroplevelser og digitale interfaces: det
+                handler om balance, struktur og sanselighed.
+                <br>
+                <br>Jeg er lidt af hvad man kan kalde en popcorn-hjerne, og beskæftiger mig med alt det der lige kilder
+                i
+                maven.
+                <br>Jeg er i evig bevægelse, og elsker at lære og vokse.
+            </p>
+        </section>
+        <section class="blanc">
+            <br>
+            <br>
+            <br>
+            <br>
+        </section>
+        <footer>
+            <section class="contact">
+                <p class="footer-p">Kontakt mig her, hvis du gerne vil i kontakt med mig.
+                </p>
+                <p class="footer-p"><a href="mailto:sabboi01@easv365.dk">Send email</a></p>
+                <p class="footer-p"></p>
+            </section>
+        </footer>
+
 </body>
 
 </html>
