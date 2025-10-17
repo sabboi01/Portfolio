@@ -21,8 +21,9 @@
             background-color: rgba(48, 48, 48, 1);
             color: white;
             text-align: center;
-            padding-top: 5px;
-            padding-bottom: 5px;
+            font: 18px;
+            padding-top: 10px;
+            padding-bottom: 10px;
             margin-left: 150px;
             margin-right: 150px;
         }
@@ -30,55 +31,80 @@
         header {
             background-color: rgba(236, 235, 230, 1);
             text-align: center;
-            padding-block: 20px;
             margin-left: 150px;
             margin-right: 150px;
+            margin-bottom: 0px;
         }
 
         header h1 {
             font-family: "JetBrains Mono", monospace;
             font-weight: 300;
+            letter-spacing: 6px;
             font-style: normal;
-            font-size: 80px;
-            line-height: 70%;
+            font-size: 88px;
+            margin: 0px;
+            padding-top: 20px;
         }
 
         header p {
-            font-size: 26px;
+            font-size: 24px;
+            letter-spacing: 9px;
+            padding-top: 20px;
+            margin-bottom: 0px;
+            padding: 0px;
+        }
+
+        section.header {
+            background: rgba(236, 235, 230, 1);
+            margin-left: 420px;
+            margin-right: 420px;
+            padding-top: 20px;
+            margin-top: 0px;
+            margin-bottom: 0px;
         }
 
         img.hero {
-            display: block;
-            margin: auto;
-            margin-bottom: 0px;
             background-color: rgba(236, 235, 230, 1);
+            margin: 0px;
+            padding: 0px;
+
         }
 
         section.intro {
-            font-size: 18px;
-            font-style: italic;
-            font-weight: normal;
             background-color: rgba(222, 222, 222, 1);
-            padding-bottom: 30px;
-            padding-top: 30px;
             text-align: center;
+            margin-top: 0px;
             margin-left: 150px;
             margin-right: 150px;
+            padding: 0px;
+
         }
 
-        section.projects {
+        section.intro p {
+            font-size: 19px;
+            font-style: italic;
+            font-weight: normal;
+            margin-left: 420px;
+            margin-right: 420px;
+            margin-top: 0px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        section.project {
             background-color: rgba(48, 48, 48, 1);
             color: white;
             text-align: center;
-            padding: 50px;
+            padding-top: 70px;
+            padding-bottom: 50px;
             margin-left: 150px;
             margin-right: 150px;
         }
 
         .project-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
             max-width: 1140px;
             margin: 5px auto 0;
         }
@@ -98,13 +124,18 @@
         }
 
         .project h3 {
-            margin: 5px 3px;
+            margin: 3px 3px;
+            font-size: 20px;
+        }
+
+        .project-title {
+            text-align: center;
             font-family: 'Roboto Mono', monospace;
-            font-size: 18px;
+            font-size: 30px;
         }
 
         .project p {
-            font-size: 16px;
+            font-size: 20px;
             color: white;
         }
 
@@ -119,13 +150,13 @@
         .skills-title {
             text-align: center;
             font-family: 'Roboto Mono', monospace;
-            font-size: 24px;
+            font-size: 30px;
             margin-bottom: 60px;
         }
 
         .skills-subtitle {
             text-align: center;
-            font-size: 16;
+            font-size: 18;
             color: #444;
             margin-bottom: 100px;
         }
@@ -135,6 +166,7 @@
             grid-template-columns: 1fr 1fr 1fr;
             max-width: 1140px;
             gap: 20px;
+            padding-left: 150px;
         }
 
         .skills-grid div {
@@ -159,8 +191,20 @@
             display: inline-block;
         }
 
+        p {
+            margin: 0px;
+        }
+
         p a {
             color: white;
+            font-size: 20px;
+            margin: 5px;
+        }
+
+        div {
+            margin-left: 25px;
+            color: rgba(48, 48, 48, 1);
+            font-size: 20px;
         }
 
         section.about {
@@ -171,8 +215,7 @@
             max-width: 1140px;
             color: rgba(48, 48, 48, 1);
             text-align: center;
-            font-size: 18px;
-            font-weight: bold;
+            font-size: 20px;
             padding-top: 50px;
             padding-bottom: 50px;
             margin-left: 150px;
@@ -181,22 +224,17 @@
 
         footer {
             background-color: rgba(48, 48, 48, 1);
+            padding: 20px;
         }
 
         .footer-p {
             max-width: 1140px;
             color: white;
             text-align: center;
-            font-size: 16px;
+            font-size: 20px;
             font-weight: normal;
             padding-top: 5px;
             padding-bottom: 5px;
-            margin-left: 150px;
-            margin-right: 150px;
-        }
-
-        section.blanc {
-            background-color: rgba(236, 235, 230, 1);
             margin-left: 150px;
             margin-right: 150px;
         }
@@ -208,51 +246,58 @@
     <nav>
         <ul>
             <li>
-                <p><a href="#section1">Intro</a></p>
+                <p><a href="#intro" id="Top">Intro</a></p>
             </li>
             <li>
-                <p><a href="#section2">Projekter</a></p>
+                <p><a href="#projekt">Projekter</a></p>
             </li>
             <li>
-                <p><a href="#section3">Kompetencer</a></p>
+                <p><a href="#skills">Kompetencer</a></p>
             </li>
             <li>
-                <p><a href="#section4">Om mig</a></p>
+                <p><a href="#about">Om mig</a></p>
             </li>
             <li>
-                <p><a href="#section5">Kontakt</a></p>
+                <p><a href="#kontakt">Kontakt</a></p>
             </li>
         </ul>
     </nav>
     <header>
-        <p>- Multimedie­designer -</p>
-        <h1>Portfolio</1>
-            <p>SABINE BOISEN</p>
-            <img src="Sabboi.png" alt="hero" class="hero" style="width:30%">
+        <section>
+            <section class="header">
+                <p>- Multimedie­designer -</p>
+                <h1>Portfolio</1>
+                    <p>SABINE BOISEN</p>
+                    <br>
+                    <img src="Sabboi.png" alt="hero" style="width:80%">
+            </section>
+        </section>
     </header>
-    <section class="intro">
-        <br>“Som multimediedesign-studerende kombinerer jeg mit
-        <br>kunstneriske blik med teknisk forståelse.
-        <br>Jeg ser det digitale som et nyt materiale — et sted hvor
-        <br>form, funktion og oplevelse mødes."
-        <br>
-        <br>
+    <section class="intro" id="intro">
+        <p>“Som multimediedesign-studerende kombinerer jeg mit
+            kunstneriske blik med teknisk forståelse.
+            Jeg ser det digitale som et nyt materiale — et sted hvor
+            form, funktion og oplevelse mødes."</p>
+        <div><a href="#Top">Til Top</a></div>
     </section>
-    <section class="projects">
-        <h2>Projekter</h2>
+
+    <section class="project">
+        <h2 class="project-title" id="projekt">Projekter</h2>
         <div class="project-grid">
             <a href="Projekt - Visuel Identitet.html" class="project">
                 <img src="P1.jpg" alt="Projekt 1">
                 <h3>Projekt - Visuel Identitet</h3>
                 <p>1. Semester
-                    <br>Case: 
-                    <br>Sønderborg International Street Food Festival</p>
+                    <br>Case:
+                    <br>Sønderborg International Street Food Festival
+                </p>
             </a>
             <a href="#" class="project">
                 <img src="P2.jpg" alt="Projekt 2">
                 <h3>Projekt 2</h3>
                 <p>1. Semester
-                    <br>Visualisering</p>
+                    <br>Visualisering
+                </p>
             </a>
             <a href="#" class="project">
                 <img src="P3.jpg" alt="Projekt 3">
@@ -265,13 +310,16 @@
                 <p>1. Semester<br>Digital præsentation</p>
             </a>
         </div>
+        <br>
+        <p><a href="#Top">Til Top</a></p>
+        <br>
     </section>
-    <section class="skills">
+
+    <section class="skills" id="skills">
         <section class="skills">
             <h2 class="skills-title">Kompetencer</h2>
             <p class="skills-subtitle">Teknisk designer med baggrund i 3D, billedhugger/skulptør og studerende i
                 multimediedesign</p>
-
             <div class="skills-grid">
                 <div>
                     <h3>Design & Visualisering (under uddannelse)</h3>
@@ -306,8 +354,10 @@
                     <img src="C3.png" alt="imgage 3">
                 </div>
             </div>
+
         </section>
-        <section class="about">
+        <div><a href="#Top">Til Top</a></div>
+        <section class="about" id="about">
             <p class="about-p">Jeg er uddannet billedhugger fra Kunsthåndværkerskolen i Flensborg, hvor jeg arbejdede
                 med form, struktur
                 og rumlig balance.
@@ -325,22 +375,23 @@
                 maven.
                 <br>Jeg er i evig bevægelse, og elsker at lære og vokse.
             </p>
-        </section>
-        <section class="blanc">
             <br>
-            <br>
-            <br>
+            <div><a href="#Top">Til Top</a></div>
             <br>
         </section>
         <footer>
+
             <section class="contact">
-                <p class="footer-p">Kontakt mig her, hvis du gerne vil i kontakt med mig.
+
+                <br>
+                <p class="footer-p" id="kontakt">Kontakt mig her, hvis du gerne vil i kontakt med mig.
                 </p>
                 <p class="footer-p"><a href="mailto:sabboi01@easv365.dk">Send email</a></p>
                 <p class="footer-p"></p>
             </section>
+            <br>
+            <p><a href="#Top">Til Top</a></p>
         </footer>
-
 </body>
 
 </html>
